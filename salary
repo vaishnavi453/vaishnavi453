@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Sal{
+
+     public static void main(String []args){
+         Scanner s=new Scanner(System.in);
+        int salary,shift;
+        System.out.println("Enter the salary per month:");
+        salary=s.nextInt();
+        System.out.println("Enter the no of shifts per month:");
+        shift=s.nextInt();
+        int exp, bonus,rem;
+        exp=(((20*salary)/100)+(30*salary)/100);
+        bonus=((2*salary)/100);
+        rem=(salary-exp)+bonus;
+        if(rem>8000)
+        {
+            System.out.println("salary too large.");
+        }
+            else if(rem<0)
+            {
+            System.out.println("salary too small");
+            }
+            else
+            {
+            System.out.println(" ");
+            }
+            while(shift<0)
+            {
+            System.out.println("shifts too small");
+            }
+        
+     }
+}
